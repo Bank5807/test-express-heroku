@@ -31,13 +31,7 @@ app.get('/person', (req,res) => {
   res.json(readDbFile())
 })
 
-app.post('/data', (req,res) => {
-  const datum = {
-    id: 1,
-  };
-  res.send(data);
-})
-
+//hello world
 app.post('/person', (req, res) => {
   const {name, age} = req.body as Person
   const db = readDbFile()
